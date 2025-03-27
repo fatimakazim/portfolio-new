@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Fatima Kazim</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#C4A484',
+secondary: '#2A2A2A'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.project-card {
+transition: transform 0.3s ease;
+}
+.project-card:hover {
+transform: translateY(-8px);
+}
+.filter-button.active {
+background-color: #C4A484;
+color: black;
+}
+</style>
+</head>
+<body class="bg-black text-white min-h-screen">
+<nav class="fixed w-full z-40 px-8 py-6 bg-black bg-opacity-90">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<a href="https://readdy.ai/home/f50ec38d-5d4e-47da-8d9b-c6694e11e33a/30f55042-0c94-41ab-8e5e-b5e29fe6df7e" data-readdy="true" class="text-2xl font-['Pacifico'] text-primary cursor-pointer">Fatima Kazim</a>
+<div class="hidden md:flex space-x-8">
+<a href="#" class="hover:text-primary transition-colors cursor-pointer">Projects</a>
+<a href="#" class="hover:text-primary transition-colors cursor-pointer">Services</a>
+<a href="#" class="hover:text-primary transition-colors cursor-pointer">Contact</a>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<div class="max-w-7xl mx-auto px-8 py-12">
+<div class="mb-16">
+<h1 class="text-5xl mb-6">Portfolio Projects</h1>
+<p class="text-xl text-gray-400">Exploring creativity through design and development</p>
+</div>
+<div class="flex justify-center space-x-4 mb-16">
+<button class="filter-button active px-6 py-2 !rounded-button text-sm font-medium transition-all" data-category="all">All Projects</button>
+<button class="filter-button px-6 py-2 !rounded-button text-sm font-medium transition-all" data-category="ui-ux">UI/UX</button>
+<button class="filter-button px-6 py-2 !rounded-button text-sm font-medium transition-all" data-category="development">Development</button>
+<button class="filter-button px-6 py-2 !rounded-button text-sm font-medium transition-all" data-category="brand">Brand Identity</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="project-card bg-secondary rounded-lg overflow-hidden cursor-pointer" data-category="ui-ux">
+<img src="https://public.readdy.ai/ai/img_res/6da59165a431c32c6b9ac477c499e5b8.jpg" class="w-full h-64 object-cover" alt="Financial App UI">
+<div class="p-6">
+<span class="text-primary text-sm">UI/UX Design</span>
+<h3 class="text-xl font-medium mt-2">FinTech Dashboard</h3>
+<p class="text-gray-400 mt-2">A comprehensive financial management platform with intuitive user interface and real-time analytics.</p>
+<div class="flex items-center mt-4 space-x-2">
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">Figma</span>
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">Protopie</span>
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">Webflow</span>
+</div>
+</div>
+</div>
+<div class="project-card bg-secondary rounded-lg overflow-hidden cursor-pointer" data-category="development">
+<img src="https://public.readdy.ai/ai/img_res/00d629063febde59e5912852bfcf0b26.jpg" class="w-full h-64 object-cover" alt="E-commerce Platform">
+<div class="p-6">
+<span class="text-primary text-sm">Development</span>
+<h3 class="text-xl font-medium mt-2">Luxury E-commerce</h3>
+<p class="text-gray-400 mt-2">High-end shopping experience with seamless checkout process and personalized recommendations.</p>
+<div class="flex items-center mt-4 space-x-2">
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">React</span>
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">Node.js</span>
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">MongoDB</span>
+</div>
+</div>
+</div>
+<div class="project-card bg-secondary rounded-lg overflow-hidden cursor-pointer" data-category="brand">
+<img src="https://public.readdy.ai/ai/img_res/5f06cc0533d297ac56c480c0e97ed090.jpg" class="w-full h-64 object-cover" alt="Brand Identity">
+<div class="p-6">
+<span class="text-primary text-sm">Brand Identity</span>
+<h3 class="text-xl font-medium mt-2">Artisan Coffee Co.</h3>
+<a href="https://readdy.ai/home/f50ec38d-5d4e-47da-8d9b-c6694e11e33a/93544505-936e-4c7d-bf7f-a0a49a8cc17e" data-readdy="true" class="text-gray-400 mt-2 block hover:text-primary transition-colors">Complete brand identity design for an artisanal coffee roasting company.</a>
+<div class="flex items-center mt-4 space-x-2">
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">Illustrator</span>
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">Photoshop</span>
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">InDesign</span>
+</div>
+</div>
+</div>
+<div class="project-card bg-secondary rounded-lg overflow-hidden cursor-pointer" data-category="ui-ux">
+<a href="https://readdy.ai/home/f50ec38d-5d4e-47da-8d9b-c6694e11e33a/56fd4823-f477-4b28-a25b-91f92d63e2be" data-readdy="true">
+<img src="https://public.readdy.ai/ai/img_res/efc1e9fdaf1f9e5d7072f304a479cfb9.jpg" class="w-full h-64 object-cover" alt="Fitness App">
+</a>
+<div class="p-6">
+<span class="text-primary text-sm">UI/UX Design</span>
+<h3 class="text-xl font-medium mt-2">FitTrack App</h3>
+<p class="text-gray-400 mt-2">Fitness tracking application with personalized workout plans and progress monitoring.</p>
+<div class="flex items-center mt-4 space-x-2">
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">Sketch</span>
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">Adobe XD</span>
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">InVision</span>
+</div>
+</div>
+</div>
+<div class="project-card bg-secondary rounded-lg overflow-hidden cursor-pointer" data-category="development">
+<img src="https://public.readdy.ai/ai/img_res/6e93f638df683a99f413942abd379ebf.jpg" class="w-full h-64 object-cover" alt="Real Estate Platform">
+<div class="p-6">
+<span class="text-primary text-sm">Development</span>
+<h3 class="text-xl font-medium mt-2">PropertyFinder</h3>
+<p class="text-gray-400 mt-2">Advanced real estate platform with virtual tours and intelligent property matching.</p>
+<div class="flex items-center mt-4 space-x-2">
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">Vue.js</span>
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">Firebase</span>
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">GraphQL</span>
+</div>
+</div>
+</div>
+<div class="project-card bg-secondary rounded-lg overflow-hidden cursor-pointer" data-category="brand">
+<img src="https://public.readdy.ai/ai/img_res/ffb3687d1e6319a1776deb5e2eb93f4b.jpg" class="w-full h-64 object-cover" alt="Restaurant Branding">
+<div class="p-6">
+<span class="text-primary text-sm">Brand Identity</span>
+<h3 class="text-xl font-medium mt-2">Essence Restaurant</h3>
+<p class="text-gray-400 mt-2">Full brand identity system for an upscale dining establishment.</p>
+<div class="flex items-center mt-4 space-x-2">
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">Illustrator</span>
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">After Effects</span>
+<span class="px-2 py-1 bg-black bg-opacity-30 rounded text-sm">Cinema 4D</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="py-12 bg-secondary mt-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-8 md:mb-0">
+<h3 class="text-2xl font-['Pacifico'] text-primary mb-4">Fatima Kazim</h3>
+<p class="text-gray-400">© 2025 All rights reserved.</p>
+</div>
+<div class="flex space-x-6">
+<a href="#" class="text-2xl hover:text-primary transition-colors cursor-pointer">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="text-2xl hover:text-primary transition-colors cursor-pointer">
+<i class="ri-twitter-line"></i>
+</a>
+<a href="#" class="text-2xl hover:text-primary transition-colors cursor-pointer">
+<i class="ri-linkedin-line"></i>
+</a>
+<a href="#" class="text-2xl hover:text-primary transition-colors cursor-pointer">
+<i class="ri-dribbble-line"></i>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+const filterButtons = document.querySelectorAll('.filter-button');
+const projectCards = document.querySelectorAll('.project-card');
+filterButtons.forEach(button => {
+button.addEventListener('click', () => {
+const category = button.dataset.category;
+filterButtons.forEach(btn => btn.classList.remove('active'));
+button.classList.add('active');
+projectCards.forEach(card => {
+if (category === 'all' || card.dataset.category === category) {
+card.style.display = 'block';
+} else {
+card.style.display = 'none';
+}
+});
+});
+});
+projectCards.forEach(card => {
+card.addEventListener('click', () => {
+window.location.href = "https://readdy.ai/home/f50ec38d-5d4e-47da-8d9b-c6694e11e33a/30f55042-0c94-41ab-8e5e-b5e29fe6df7e";
+});
+});
+});
+</script>
+</body>
+</html>

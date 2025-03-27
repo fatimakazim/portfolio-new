@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fatima Kazim - Creative Designer & Developer</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#C4A484',
+secondary: '#2A2A2A'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.slide-content {
+opacity: 0;
+transform: translateY(20px);
+transition: all 0.6s ease-out;
+}
+.slide-content.active {
+opacity: 1;
+transform: translateY(0);
+}
+.cursor-dot {
+width: 5px;
+height: 5px;
+background-color: #C4A484;
+}
+.cursor-outline {
+width: 30px;
+height: 30px;
+border: 2px solid #C4A484;
+}
+.hover-trigger:hover ~ .cursor-outline {
+transform: scale(1.5);
+}
+</style>
+</head>
+<body class="bg-black text-white min-h-screen">
+<div class="cursor-dot fixed pointer-events-none z-50 rounded-full transition-transform duration-200"></div>
+<div class="cursor-outline fixed pointer-events-none z-50 rounded-full transition-transform duration-200"></div>
+<nav class="fixed w-full z-40 px-8 py-6">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<h1 class="text-2xl font-['Pacifico'] text-primary">Fatima Kazim</h1>
+<div class="hidden md:flex space-x-8">
+<a href="#projects" class="hover-trigger hover:text-primary transition-colors">Projects</a>
+<a href="#services" class="hover-trigger hover:text-primary transition-colors">Services</a>
+<a href="#contact" class="hover-trigger hover:text-primary transition-colors">Contact</a>
+</div>
+<button class="md:hidden text-2xl hover-trigger">
+<i class="ri-menu-line"></i>
+</button>
+</div>
+</nav>
+<main>
+<section class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0">
+<img src="https://public.readdy.ai/ai/img_res/a079d90c3cd4ad364e30b42465961dc5.jpg"
+class="w-full h-full object-cover" alt="Hero Image">
+<div class="absolute inset-0 bg-black bg-opacity-40"></div>
+</div>
+<div class="relative max-w-7xl mx-auto px-8">
+<div class="slide-content active">
+<h2 class="text-6xl md:text-8xl font-light mb-6">Creative</h2>
+<h3 class="text-4xl md:text-6xl font-light mb-8">Design & Development</h3>
+<p class="text-xl md:text-2xl text-gray-300 max-w-2xl">
+Crafting immersive digital experiences through innovative design and cutting-edge development.
+</p>
+<a href="https://readdy.ai/home/f50ec38d-5d4e-47da-8d9b-c6694e11e33a/e3df2933-7d02-464f-9d1a-bc7e5ef95c8b" data-readdy="true" class="mt-8 px-8 py-3 bg-primary text-black !rounded-button hover:bg-opacity-90 transition-all inline-block">
+Explore My Work
+</a>
+</div>
+</div>
+</section>
+<section id="projects" class="py-24 bg-secondary">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-5xl mb-16">Featured Projects</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="project-card hover-trigger group relative overflow-hidden rounded-lg">
+<img src="https://public.readdy.ai/ai/img_res/631030b9668e91d4f87dc158d90d23b0.jpg"
+class="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105" alt="Project 1">
+<div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="text-center">
+<h3 class="text-2xl mb-2">ONA Residence</h3>
+<p class="text-gray-300">Interior Design & Development</p>
+</div>
+</div>
+</div>
+<div class="project-card hover-trigger group relative overflow-hidden rounded-lg">
+<img src="https://public.readdy.ai/ai/img_res/8695a81a575eafa56cffe175736ce49b.jpg"
+class="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105" alt="Project 2">
+<div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="text-center">
+<h3 class="text-2xl mb-2">Modern Living</h3>
+<p class="text-gray-300">Spatial Design</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="services" class="py-24">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-5xl mb-16">Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="service-card hover-trigger p-8 rounded-lg bg-secondary">
+<i class="ri-layout-4-line text-4xl text-primary mb-4"></i>
+<h3 class="text-2xl mb-4">UI/UX Design</h3>
+<p class="text-gray-400">Creating intuitive and engaging user experiences through thoughtful design.</p>
+</div>
+<div class="service-card hover-trigger p-8 rounded-lg bg-secondary">
+<i class="ri-code-line text-4xl text-primary mb-4"></i>
+<h3 class="text-2xl mb-4">Development</h3>
+<p class="text-gray-400">Building robust and scalable web applications with modern technologies.</p>
+</div>
+<div class="service-card hover-trigger p-8 rounded-lg bg-secondary">
+<i class="ri-paint-brush-line text-4xl text-primary mb-4"></i>
+<h3 class="text-2xl mb-4">Brand Identity</h3>
+<p class="text-gray-400">Developing unique and memorable brand identities that stand out.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-24 bg-secondary">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-5xl mb-16">Get in Touch</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<div>
+<p class="text-xl text-gray-300 mb-8">
+Let's collaborate on your next project. Feel free to reach out through the form or direct channels below.
+</p>
+<div class="space-y-4">
+<div class="flex items-center">
+<i class="ri-mail-line text-primary mr-4"></i>
+<span>hello@andreadiego.com</span>
+</div>
+<div class="flex items-center">
+<i class="ri-phone-line text-primary mr-4"></i>
+<span>+1 (555) 123-4567</span>
+</div>
+<div class="flex items-center">
+<i class="ri-map-pin-line text-primary mr-4"></i>
+<span>Los Angeles, CA</span>
+</div>
+</div>
+</div>
+<form class="space-y-6">
+<div>
+<input type="text" placeholder="Your Name" class="w-full p-3 bg-black bg-opacity-50 rounded border-none focus:ring-2 focus:ring-primary">
+</div>
+<div>
+<input type="email" placeholder="Your Email" class="w-full p-3 bg-black bg-opacity-50 rounded border-none focus:ring-2 focus:ring-primary">
+</div>
+<div>
+<textarea placeholder="Your Message" rows="4" class="w-full p-3 bg-black bg-opacity-50 rounded border-none focus:ring-2 focus:ring-primary"></textarea>
+</div>
+<button type="submit" class="px-8 py-3 bg-primary text-black !rounded-button hover:bg-opacity-90 transition-all">
+Send Message
+</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="py-12 bg-black">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-8 md:mb-0">
+<h3 class="text-2xl font-['Pacifico'] text-primary mb-4">Fatima Kazim</h3>
+<p class="text-gray-400">© 2025 All rights reserved.</p>
+</div>
+<div class="flex space-x-6">
+<a href="#" class="hover-trigger text-2xl hover:text-primary transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="hover-trigger text-2xl hover:text-primary transition-colors">
+<i class="ri-twitter-line"></i>
+</a>
+<a href="#" class="hover-trigger text-2xl hover:text-primary transition-colors">
+<i class="ri-linkedin-line"></i>
+</a>
+<a href="#" class="hover-trigger text-2xl hover:text-primary transition-colors">
+<i class="ri-dribbble-line"></i>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+const cursor = document.querySelector('.cursor-dot');
+const cursorOutline = document.querySelector('.cursor-outline');
+document.addEventListener('mousemove', (e) => {
+const posX = e.clientX;
+const posY = e.clientY;
+cursor.style.left = `${posX}px`;
+cursor.style.top = `${posY}px`;
+cursorOutline.style.left = `${posX - 15}px`;
+cursorOutline.style.top = `${posY - 15}px`;
+});
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('active');
+}
+});
+}, { threshold: 0.1 });
+document.querySelectorAll('.slide-content').forEach(content => {
+observer.observe(content);
+});
+});
+</script>
+</body>
+</html>
